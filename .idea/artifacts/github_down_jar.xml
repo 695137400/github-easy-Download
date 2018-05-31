@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact name="github-down:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/github_down_jar</output-path>
+    <root id="root">
+      <element id="archive" name="github-down.jar">
+        <element id="module-output" name="github-down" />
+      </element>
+      <element id="library" level="project" name="fastjson-1.1.33" />
+      <element id="library" level="project" name="commons-logging-1.2" />
+      <element id="library" level="project" name="commons-httpclient-3.1" />
+      <element id="library" level="project" name="commons-codec-1.10" />
+      <element id="library" level="project" name="jsoup-1.11.3" />
+    </root>
+  </artifact>
+</component>

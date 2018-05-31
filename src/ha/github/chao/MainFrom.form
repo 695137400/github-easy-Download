@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ha.github.chao.MainFrom">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="800" height="600"/>
+    </constraints>
+    <properties>
+      <autoscrolls value="true"/>
+      <doubleBuffered value="false"/>
+      <enabled value="false"/>
+      <focusable value="false"/>
+      <inheritsPopupMenu value="true"/>
+      <minimumSize width="800" height="600"/>
+      <preferredSize width="800" height="600"/>
+      <requestFocusEnabled value="true"/>
+    </properties>
+    <clientProperties>
+      <html.disable class="java.lang.Boolean" value="false"/>
+    </clientProperties>
+    <border type="none"/>
+    <children>
+      <grid id="a3127" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties>
+          <focusCycleRoot value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d4536" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <margin top="0" left="0" bottom="0" right="0"/>
+            </properties>
+          </component>
+          <component id="29c6" class="javax.swing.JLabel">
+            <constraints border-constraint="West"/>
+            <properties>
+              <font size="16"/>
+              <text value="请输入github地址："/>
+            </properties>
+          </component>
+          <grid id="74e8e" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="East"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="336c5" class="javax.swing.JButton" binding="button1">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <font size="16"/>
+                  <text value="GO"/>
+                </properties>
+              </component>
+              <component id="36274" class="javax.swing.JButton" binding="down">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="11"/>
+                  <text value="下载"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <scrollpane id="a1188" binding="scrollPane1">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <visible value="true"/>
+        </properties>
+        <border type="line" title-position="4">
+          <font/>
+        </border>
+        <children>
+          <component id="2236" class="javax.swing.JTree" binding="tree1">
+            <constraints/>
+            <properties>
+              <editable value="true"/>
+              <font size="16"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="6d07c" class="javax.swing.JLabel" binding="log">
+        <constraints border-constraint="South"/>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

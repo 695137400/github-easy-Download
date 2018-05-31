@@ -1,0 +1,122 @@
+[
+  {
+    "fileName": "intellij-plugins/markdown/lib/plantuml-jar-asl",
+    "run": true,
+    "savePath": "intellij-plugins/markdown/lib/plantuml-jar-asl",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/lib/plantuml-jar-asl"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/resource/icons",
+    "run": true,
+    "savePath": "intellij-plugins/markdown/resource/icons",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/resource/icons"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/resource/inspectionDescriptions",
+    "run": true,
+    "savePath": "intellij-plugins/markdown/resource/inspectionDescriptions",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/resource/inspectionDescriptions"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/resource/org/intellij/plugins/markdown",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/resource/org/intellij/plugins/markdown",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/resource/org/intellij/plugins/markdown"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/braces",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/braces",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/braces"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/editor",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/editor",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/editor"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/extensions",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/extensions",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/extensions"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/folding",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/folding",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/folding"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/highlighting",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/highlighting",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/highlighting"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/injection",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/injection",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/injection"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/lang",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/lang",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/lang"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/settings",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/settings",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/settings"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/spellchecking",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/spellchecking",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/spellchecking"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/structureView",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/structureView",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/structureView"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/ui",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/ui",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/ui"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/util",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/src/org/intellij/plugins/markdown/util",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/src/org/intellij/plugins/markdown/util"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/test/data",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/test/data",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/test/data"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/test/src/org/intellij/plugins/markdown",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/test/src/org/intellij/plugins/markdown",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/test/src/org/intellij/plugins/markdown"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/resource/icons/editor_actions",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/resource/icons/editor_actions",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/resource/icons/editor_actions"
+  },
+  {
+    "fileName": "intellij-plugins/markdown/resource/icons/layout",
+    "run": false,
+    "savePath": "intellij-plugins/markdown/resource/icons/layout",
+    "urlStr": "https://github.com//695137400/intellij-plugins/tree/master/markdown/resource/icons/layout"
+  }
+]
