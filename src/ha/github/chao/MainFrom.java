@@ -16,12 +16,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
 
 /**
  * Created with IntelliJ IDEA.<br/>
@@ -43,17 +38,43 @@ public class MainFrom {
     private JLabel log;
     static InfiniteProgressPanel glasspane = new InfiniteProgressPanel();
     static Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
-    private static String ip = "https://api.github.com/repos/";
-    public static String github = "https://github.com/";
-    public static String rawUrl = "https://raw.githubusercontent.com/";
-    private static String user = "";
-    private static String project = "";
     private static JFrame frame;
+
+
+    //  private static String ip = "https://api.github.com/repos/";
+    /**
+     * github 地址
+     */
+    public static String github = "https://github.com/";
+    /**
+     * github 下载文件地址
+     */
+    public static String rawUrl = "https://raw.githubusercontent.com/";
+    /**
+     * 选择的项目名称
+     */
+    private static String project = "";
+    /**
+     * 本地保存路径
+     */
     public static String downfilePath;
+    /**
+     * 文件下载任务列表
+     */
     public static List<DownTask> downTasks = new ArrayList<>();
+    /**
+     * 节点加载任务列表
+     */
     public static List<TreeTask> treeTasks = new ArrayList<>();
+    /**
+     * 单例创建任务
+     */
     static Singleton singleton = Singleton.getInstance();
-    public static List<Thread> downloadThreads = new ArrayList<>();
+    /**
+     * 线程列表
+     */
+    public static List<DownloadThread> downloadThreads = new ArrayList<>();
+    public static List<TreeThread> treeThreads = new ArrayList<>();
 
     public static void main(String[] args) {
         frame = new JFrame("github 任意下载");
@@ -65,25 +86,112 @@ public class MainFrom {
         frame.setVisible(true);
         glasspane.setBounds(100, 100, (dimension.width) / 2, (dimension.height) / 2);
         frame.setGlassPane(glasspane);
-        try {
-            for (int i = 0; i < 10; i++) {
-                DownloadThread ds = new DownloadThread(i);
+    }
+
+    /**
+     * 线程启用
+     *
+     * @param count 启用数量
+     * @param type  启用类型 1,，节点  2，下载  其它两个都执行
+     */
+    private void statrThread(int count, int type) {
+        if (type == 1) {
+            for (int i = 0; i < count; i++) {
                 TreeThread ts = new TreeThread(i);
-                downloadThreads.add(ds);
-                downloadThreads.add(ts);
-                ds.start();
+                treeThreads.add(ts);
                 ts.start();
+            }
+        } else if (type == 2) {
+            for (int i = 0; i < count; i++) {
+                DownloadThread ds = new DownloadThread(i);
+                downloadThreads.add(ds);
+                ds.start();
+            }
+        } else {
+            try {
+                for (int i = 0; i < 10; i++) {
+                    TreeThread ts = new TreeThread(i);
+                    treeThreads.add(ts);
+                    ts.start();
+                    DownloadThread ds = new DownloadThread(i);
+                    downloadThreads.add(ds);
+                    ds.start();
+
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        threadMonitoring();
+    }
+
+    /**
+     * 停止线程
+     *
+     * @param type 1，节点线程  其它全停
+     */
+    private void stopThread(int type) {
+        try {
+            if (type == 1) {
+                for (TreeThread thread : treeThreads) {
+                    thread.close();
+                }
+                treeThreads.clear();
+            } else {
+                for (TreeThread thread : treeThreads) {
+                    thread.close();
+                }
+                for (DownloadThread thread : downloadThreads) {
+                    thread.close();
+                }
+                treeThreads.clear();
+                downloadThreads.clear();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
+    boolean exit = false;
+
+    /**
+     * 线程监控
+     */
+    private void threadMonitoring() {
+        exit = true;
+        new Thread() {
+            public void run() {
+                try {
+                    frame.setTitle("github 任意下载    启动线程监控");
+                    while (exit) {
+                        frame.setTitle("github 任意下载    剩余任务数    下载：" + downTasks.size() + "    列表：" + treeTasks.size());
+                        if (downTasks.size() == 0 && treeTasks.size() == 0) {
+                            glasspane.stop();//结束动画
+                            frame.setTitle("github 任意下载");
+                            log.setText("加载完毕！");
+                            stopThread(0);
+                            this.close();
+                            break;
+                        }
+                        Thread.sleep(5000);
+                    }
+                    tree1.updateUI();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            private void close() {
+                exit = false;
+            }
+        }.start();
+    }
+
     public MainFrom() {
         tree1.setVisible(false);
         button1.setEnabled(false);//变灰
         down.setEnabled(false);//变灰
-        tree1.setEditable(false);
+        tree1.setEditable(false);//不可双击编辑
 
         GithubTree root = new GithubTree("root");
         tree1.setModel(new DefaultTreeModel(root));
@@ -108,28 +216,17 @@ public class MainFrom {
                                 String path = selectedNode.getFilePath();
                                 File root = new File(downfilePath + File.separator + path);
                                 if (!root.exists()) {
-                                    System.out.println(root.getAbsolutePath());
                                     log.setText("新建文件夹：" + root.getAbsolutePath());
                                     root.mkdirs();
                                 }
                                 DownTask downTask = new DownTask();
                                 downTask.setRun(false);
                                 downTask.setFileName(path);
-                                downTask.setUrlStr(selectedNode.getUrl());
                                 downTask.setTree(selectedNode);
                                 downTask.setLog(log);
                                 downTask.setJtree(tree1);
-                                downTask.setSavePath(path + File.separator + path);
                                 singleton.setDownTask(downTask);
-                                while (true) {
-                                    Thread.sleep(5000);
-                                    System.out.println("剩余下载进程------>"+downTasks.size());
-                                    if (downTasks.size() == 0) {
-                                        glasspane.stop();//结束动画
-                                        log.setText("下载完成！");
-                                        break;
-                                    }
-                                }
+                                statrThread(10, 0);
                             } catch (Exception e1) {
                                 e1.printStackTrace();
                                 JOptionPane.showMessageDialog(null, e1, "错误提示", JOptionPane.ERROR_MESSAGE);
@@ -157,20 +254,17 @@ public class MainFrom {
                         try {
                             String t = url.substring(github.length());
                             String[] ut = t.split("/");
-                            user = ut[0];
                             project = ut[1];
-                            System.out.println("user：" + user);
                             System.out.println("project：" + project);
-
                             Page page = RequestAndResponseTool.sendRequstAndGetResponse(url);
-
                             if (null != page) {
                                 tree1.setVisible(true);
-                                GithubTree tree = new GithubTree(project);
-                                tree.setFilePath(project);
-                                DefaultTreeModel model = new DefaultTreeModel(tree);
-                                getDefaultTreeModel(page, tree);
+                                GithubTree root = new GithubTree(project);
+                                root.setFilePath(project);
+                                DefaultTreeModel model = new DefaultTreeModel(root);
+                                getDefaultTreeModel(page, root);
                                 tree1.setModel(model);
+                                statrThread(10, 1);
                             }
                         } catch (Exception e1) {
                             e1.printStackTrace();
@@ -208,6 +302,7 @@ public class MainFrom {
                                         treeTask.setLog(log);
                                         treeTask.setTree(tree1);
                                         singleton.setTreeTask(treeTask);
+                                        statrThread(10, 1);
                                     }
                                 }
                             }.start();
@@ -217,11 +312,6 @@ public class MainFrom {
             }
         });
         textField1.addKeyListener(new KeyAdapter() {
-            /**
-             * Invoked when a key has been released. keyUp
-             *
-             * @param e
-             */
             @Override
             public void keyReleased(KeyEvent e) {
                 String url = textField1.getText();
@@ -240,8 +330,6 @@ public class MainFrom {
      * @return
      */
     private void getDefaultTreeModel(Page page, GithubTree root) {
-        root.setUrl(page.getUrl());
-        root.setTitle(project);
         Document documents = page.getDoc();
         Elements elements = documents.getElementsByClass("files");
         if (elements.size() > 0) {
@@ -281,28 +369,10 @@ public class MainFrom {
         } else {
             root.setType("file");
         }
-        new Thread(){
-            @Override
-            public void run() {
-                try {
-                    while (true){
-                        Thread.sleep(5000);
-                        System.out.println(treeTasks.size());
-                        if (treeTasks.size() == 0) {
-                            glasspane.stop();//结束动画
-                            log.setText("加载完毕！");
-                            break;
-                        }
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }.start();
         tree1.updateUI();
     }
 
-    public static DownTask getDownTasks() {
+    public synchronized static DownTask getDownTasks() {
         for (DownTask d : downTasks) {
             if (!d.isRun()) {
                 return d;
@@ -312,7 +382,7 @@ public class MainFrom {
     }
 
 
-    public static TreeTask getTreeTasks() {
+    public synchronized static TreeTask getTreeTasks() {
         for (TreeTask t : treeTasks) {
             if (!t.isRun()) {
                 return t;

@@ -3,9 +3,6 @@ package ha.github.chao;
 import ha.github.chao.dowload.DownTask;
 import ha.github.chao.dowload.TreeTask;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created with IntelliJ IDEA.<br/>
  * User: lizhichao<br/>
@@ -19,9 +16,7 @@ public class Singleton {
     }
 
     private static final Singleton single = new Singleton();
-    public static Map<String, Object> downKeys = new HashMap<>();
-    public static Map<String, Object> treeKeys = new HashMap<>();
-    public static Map<String, Object> tempKeys = new HashMap<>();
+    private static String lock = "1";
 
     //静态工厂方法
     public static Singleton getInstance() {
@@ -29,32 +24,41 @@ public class Singleton {
     }
 
     public static DownTask getDownTasks() {
-        DownTask task =null;
-        try {
-            task = MainFrom.getDownTasks();
-            if (null != task && null == tempKeys.get(task.getFileName())) {
-                tempKeys.put(task.getFileName(), "1");
-            } else {
-                task = null;
+        DownTask task = null;
+        synchronized (lock) {
+            try {
+                task = MainFrom.getDownTasks();
+                if (null != task) {
+                    task.setRun(true);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
         return task;
     }
 
 
     public static TreeTask getTreeTasks() {
-
-        return MainFrom.getTreeTasks();
+        TreeTask task = null;
+        synchronized (lock) {
+            try {
+                task = MainFrom.getTreeTasks();
+                if (null != task) {
+                    task.setRun(true);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return task;
     }
 
     public static void setTreeTask(TreeTask task) {
         try {
-            if (null == treeKeys.get(task.getRoot().getTitle())) {
-                System.out.println("添加tree任务：" + task.getRoot().getTitle());
+            synchronized (lock) {
+                LOG.debug("setTreeTask:\t" + task.getRoot().getTitle(), "Singleton.log");
                 MainFrom.treeTasks.add(task);
-                treeKeys.put(task.getRoot().getTitle(), "1");
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -63,10 +67,9 @@ public class Singleton {
 
     public static void setDownTask(DownTask task) {
         try {
-            if (null == downKeys.get(task.getFileName())) {
-                System.out.println("添加down任务：" + task.getFileName());
+            synchronized (lock) {
+                LOG.debug("setDownTask:\t" + task.getFileName(), "Singleton.log");
                 MainFrom.downTasks.add(task);
-                downKeys.put(task.getFileName(), "1");
             }
         } catch (Exception e) {
             e.printStackTrace();

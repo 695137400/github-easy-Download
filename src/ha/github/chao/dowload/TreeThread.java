@@ -1,6 +1,8 @@
 package ha.github.chao.dowload;
 
 
+import com.alibaba.fastjson.JSON;
+import ha.github.chao.LOG;
 import ha.github.chao.Singleton;
 
 import java.util.HashMap;
@@ -20,7 +22,7 @@ public class TreeThread extends Thread {
     //当前ID号
     public int ID;
 
-    public boolean exit = false;
+    public boolean exit = true;
 
     public TreeThread(int id) {
         ID = id;
@@ -28,19 +30,22 @@ public class TreeThread extends Thread {
 
     @Override
     public void run() {
-        Map<String,String> falg = new HashMap<>();
-        while (!exit) {
-            if (falg.size() == 0) {
-                //从任务列表中读取一个没有被下载的任务
+        Map<String, Object> falg = new HashMap<>();
+        while (exit) {
+            System.out.println("TreeThread：" + ID + "\t\t" + JSON.toJSON(falg));
+            if (falg.size() < 2) {
+                falg.put("ID", ID);
                 TreeTask treeTask = singleton.getTreeTasks();
                 try {
                     if (null != treeTask) {
-                        falg.put(treeTask.getRoot().getTitle(),"1");
-                        treeTask.setRun(true);
+                        LOG.debug("线程：\t" + ID + "\t任务：\t" + treeTask.getRoot().getTitle(), "Singleton.log");
+                        falg.put(treeTask.getRoot().getTitle(), "1");
                         treeTask.getDefaultTreeModel(falg);
                     }
                 } catch (Exception e) {
                     treeTask.setRun(false);
+                    falg.clear();
+                    LOG.debug("线程：\t" + ID + "\t任务失败：\t" + treeTask.getRoot().getTitle() + "\t" + e.getMessage(), "Singleton.log");
                     e.printStackTrace();
                 }
             }
@@ -50,5 +55,9 @@ public class TreeThread extends Thread {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void close() {
+        exit = false;
     }
 }

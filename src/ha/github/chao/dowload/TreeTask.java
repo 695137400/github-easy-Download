@@ -1,5 +1,7 @@
 package ha.github.chao.dowload;
 
+import com.alibaba.fastjson.JSON;
+import ha.github.chao.LOG;
 import ha.github.chao.MainFrom;
 import ha.github.chao.Singleton;
 import ha.github.chao.github.GithubTree;
@@ -18,11 +20,49 @@ import java.util.Map;
  * Date: 2018-5-31-0031<br/>
  * Time: 0:26:39<br/>
  * Author:lizhichao<br/>
- * Description: <span style="color:#63D3E9"></span><br/>
+ * Description: <span style="color:#63D3E9">列表加载任务模版</span><br/>
  */
 public class TreeTask {
 
+    /**
+     * 是否加载子目录
+     */
     boolean chiden = false;
+
+    /**
+     * 是否已经运行
+     */
+    private boolean isRun = false;
+
+    /**
+     * 下载地址
+     */
+    private String url;
+
+    /**
+     * 父节点
+     */
+    private GithubTree root;
+
+    /**
+     * 刷新树引用琏
+     */
+    private JTree tree;
+
+    /**
+     * 日志引用链
+     */
+    private JLabel log;
+
+    /**
+     * 是否创建下载任务
+     */
+    private boolean isDown = false;
+
+    /**
+     * 单例创建任务
+     */
+    static Singleton singleton = Singleton.getInstance();
 
     public TreeTask(boolean chid) {
         chiden = chid;
@@ -32,29 +72,23 @@ public class TreeTask {
 
     }
 
-    private boolean isRun = false;
-    private String url;
-    private GithubTree root;
-    private JTree tree;
-    private JLabel log;
-    static Singleton singleton = Singleton.getInstance();
 
-    public void getDefaultTreeModel(Map<String,String> falg) throws Exception {
-
+    public synchronized void getDefaultTreeModel(Map<String, Object> falg) throws Exception {
+        LOG.debug("TreeTask:\t" + JSON.toJSON(falg), "TreeTask.log");
+        log.setText("加载地址：" + url);
         Page page = RequestAndResponseTool.sendRequstAndGetResponse(url);
         Document documents = page.getDoc();
         Elements elements = documents.getElementsByClass("files");
         if (elements.size() > 0) {
-            root.setType("directory");
             for (Element element : elements) {
-                Elements childrens = element.getElementsByClass("js-navigation-item");
-                if (childrens.size() > 0) {
+                Elements els = element.getElementsByClass("js-navigation-item");
+                if (els.size() > 0) {
                     root.removeAllChildren();
                     if (null != root.getChildrens() && root.getChildrens().size() > 0) {
                         root.getChildrens().clear();
                     }
-                    List<GithubTree> childerns = new ArrayList<>();
-                    for (Element el : childrens) {
+                    List<GithubTree> root_chidens = new ArrayList<>();
+                    for (Element el : els) {
                         Elements tagA = el.getElementsByClass("js-navigation-open");
                         if (null == tagA.attr("id") || "".equals(tagA.attr("id"))) {
                             continue;
@@ -62,39 +96,44 @@ public class TreeTask {
                         String urlA = MainFrom.github + tagA.attr("href");
                         String path = tagA.text();
                         String type = el.getElementsByTag("svg").attr("class").indexOf("directory") > 0 ? "directory" : "file";
-                        GithubTree childern = new GithubTree(path);
-                        childern.setUrl(urlA);
-                        childern.setType(type);
-                        childern.setFilePath(root.getFilePath() + "/" + path);
+                        GithubTree node = new GithubTree(path);
+                        node.setUrl(urlA);
+                        node.setType(type);
+                        node.setFilePath(root.getFilePath() + "/" + path);
                         if ("directory".equals(type)) {
-                            log.setText("加载地址：" + urlA);
-                            childern.add(new GithubTree("...").setType("temp"));
-                            root.add(childern);
+                            node.add(new GithubTree("...").setType("temp"));
+                            root.add(node);
                             TreeTask treeTask = new TreeTask();
                             treeTask.setRun(false);
                             treeTask.setUrl(urlA);
-                            treeTask.setRoot(childern);
+                            treeTask.setRoot(node);
                             treeTask.setTree(tree);
                             treeTask.setLog(log);
                             if (chiden) {
                                 singleton.setTreeTask(treeTask);
                             }
                         } else {
-                            root.add(childern);
+                            root.add(node);
                         }
-                        childerns.add(childern);
+                        root_chidens.add(node);
                     }
-                    root.setChildrens(childerns);
+                    root.setChildrens(root_chidens);
                 }
             }
-        } else {
-            root.setType("file");
         }
         tree.updateUI();
-        singleton.treeKeys.remove(root.getTitle());
         boolean res = MainFrom.treeTasks.remove(this);
-        System.out.println("删除任务：----------" + res);
-        falg.remove(root.getTitle());
+        LOG.debug("TreeTask删除任务\t" + root.getTitle() + ":\t" + res, "TreeTask.log");
+        if (isDown) {
+            DownTask downTask = new DownTask();
+            downTask.setRun(false);
+            downTask.setFileName(root.getFilePath());
+            downTask.setTree(root);
+            downTask.setLog(log);
+            downTask.setJtree(tree);
+            singleton.setDownTask(downTask);
+        }
+        falg.clear();
     }
 
 
@@ -104,10 +143,6 @@ public class TreeTask {
 
     public void setRun(boolean run) {
         isRun = run;
-    }
-
-    public String getUrl() {
-        return url;
     }
 
     public void setUrl(String url) {
@@ -130,4 +165,7 @@ public class TreeTask {
         this.log = log;
     }
 
+    public void setDown(boolean down) {
+        isDown = down;
+    }
 }

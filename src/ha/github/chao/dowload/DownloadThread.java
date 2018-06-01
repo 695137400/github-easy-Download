@@ -1,5 +1,6 @@
 package ha.github.chao.dowload;
 
+import ha.github.chao.LOG;
 import ha.github.chao.Singleton;
 
 import java.util.HashMap;
@@ -19,29 +20,32 @@ public class DownloadThread extends Thread {
     final static Singleton singleton = Singleton.getInstance();
 
     //当前ID号
-    public int ID;
-
-    public boolean exit = false;
+    private int ID;
 
     public DownloadThread(int id) {
         ID = id;
     }
 
+    public boolean exit = true;
+
     @Override
     public void run() {
-        Map<String,String> falg = new HashMap<>();
-        while (!exit) {
-            if (falg.size() == 0) {
-                //从任务列表中读取一个没有被下载的任务
+        Map<String, Object> falg = new HashMap<>();
+        while (exit) {
+            System.out.println("DownloadThread：" + ID);
+            if (falg.size() < 2) {
+                falg.put("ID", ID);
                 DownTask downTask = singleton.getDownTasks();
                 try {
                     if (null != downTask) {
-                        falg.put(downTask.getFileName(),"1");
-                        downTask.setRun(true);
+                        LOG.debug("线程：\t" + ID + "\t任务：\t" + downTask.getFileName(), "Singleton.log");
+                        falg.put(downTask.getFileName(), "1");
                         downTask.downFile(falg);
                     }
                 } catch (Exception e) {
                     downTask.setRun(false);
+                    falg.clear();
+                    LOG.debug("线程：\t" + ID + "\t任务失败：\t" + downTask.getFileName() + "\t" + e.getMessage(), "Singleton.log");
                     e.printStackTrace();
                 }
             }
@@ -51,5 +55,9 @@ public class DownloadThread extends Thread {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void close() {
+        exit = false;
     }
 }

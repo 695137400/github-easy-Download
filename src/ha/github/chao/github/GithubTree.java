@@ -37,11 +37,6 @@ public class GithubTree extends DefaultMutableTreeNode {
         return title;
     }
 
-    public GithubTree setTitle(String title) {
-        this.title = title;
-        return this;
-    }
-
     public String getType() {
         return type;
     }
