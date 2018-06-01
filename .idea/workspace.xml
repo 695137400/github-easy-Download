@@ -6,32 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6c48670-e618-4ab3-ac58-6691226ee93a" name="Default" comment="修改内容：&#10;1，添加线程启用和关闭&#10;2，添加线程监控&#10;3，修改逻辑调用错误导致下载工程不完整">
-      <change afterPath="$PROJECT_DIR$/src/ha/github/chao/LOG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$3$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/Singleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/DownTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/DownTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/DownloadThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/DownloadThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/TreeTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/TreeTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/TreeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/TreeThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/github/GithubTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/github/GithubTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/MainFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/MainFrom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/DownTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/DownTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/DownloadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/DownloadThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/github/GithubTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/github/GithubTree.java" afterDir="false" />
-    </list>
+    <list default="true" id="b6c48670-e618-4ab3-ac58-6691226ee93a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -187,8 +162,8 @@
       <file leaf-file-name="LOG.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ha/github/chao/LOG.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="546">
+              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -309,17 +284,6 @@
             <path>
               <item name="github-easy-Download" type="b2602c69:ProjectViewProjectNode" />
               <item name="github-easy-Download" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github-easy-Download" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github-easy-Download" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="github-easy-Download" type="b2602c69:ProjectViewProjectNode" />
-              <item name="github-easy-Download" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -560,12 +524,20 @@
       <workItem from="1527761772537" duration="8337000" />
       <workItem from="1527772025932" duration="1313000" />
       <workItem from="1527773428357" duration="1070000" />
-      <workItem from="1527819950223" duration="29229000" />
+      <workItem from="1527819950223" duration="29476000" />
     </task>
+    <task id="LOCAL-00001" summary="修改内容：&#10;1，添加线程启用和关闭&#10;2，添加线程监控&#10;3，修改逻辑调用错误导致下载工程不完整">
+      <created>1527853946810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527853946810</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166043000" />
+    <option name="totallyTimeSpent" value="166290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -593,7 +565,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.42560175" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="7" weight="0.32969433" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5229759" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -648,6 +620,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改内容：&#10;1，添加线程启用和关闭&#10;2，添加线程监控&#10;3，修改逻辑调用错误导致下载工程不完整" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改内容：&#10;1，添加线程启用和关闭&#10;2，添加线程监控&#10;3，修改逻辑调用错误导致下载工程不完整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -704,13 +680,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/JPopupMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="836" column="37" selection-start-line="836" selection-start-column="37" selection-end-line="836" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/icon/fd2a069db6129124413d83fce249be42.jpeg" />
     <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/ImageIcon.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1107,10 +1076,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Singleton.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ha/github/chao/LOG.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        <state relative-caret-position="546">
+          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
         </state>
       </provider>
     </entry>
