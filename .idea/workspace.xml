@@ -6,7 +6,37 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6c48670-e618-4ab3-ac58-6691226ee93a" name="Default" comment="" />
+    <list default="true" id="b6c48670-e618-4ab3-ac58-6691226ee93a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/lizhichao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ha/github/chao/com/nj/zb/CleanUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github-down.iml" beforeDir="false" afterPath="$PROJECT_DIR$/github-down.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/github_down_jar/github-down.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/github_down_jar/github-down.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/MainFrom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/Singleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/DownTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/DownTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/DownloadThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/DownloadThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/RequestAndResponseTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/RequestAndResponseTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/TreeTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/TreeTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/TreeThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/dowload/TreeThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/github/GithubTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/github-down/ha/github/chao/github/GithubTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/MainFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/MainFrom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/DownTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/DownTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/DownloadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/DownloadThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/RequestAndResponseTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/RequestAndResponseTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ha/github/chao/github/GithubTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ha/github/chao/github/GithubTree.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,11 +64,8 @@
       <file leaf-file-name="Singleton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ha/github/chao/Singleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-367">
+              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -46,62 +73,8 @@
       <file leaf-file-name="TreeTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/TreeTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
-                <element signature="e#1178#1179#0" expanded="true" />
-                <element signature="e#4334#4335#0" expanded="true" />
-                <element signature="e#4362#4363#0" expanded="true" />
-                <element signature="e#4401#4402#0" expanded="true" />
-                <element signature="e#4428#4429#0" expanded="true" />
-                <element signature="e#4522#4523#0" expanded="true" />
-                <element signature="e#4552#4553#0" expanded="true" />
-                <element signature="e#4587#4588#0" expanded="true" />
-                <element signature="e#4614#4615#0" expanded="true" />
-                <element signature="e#4658#4659#0" expanded="true" />
-                <element signature="e#4690#4691#0" expanded="true" />
-                <element signature="e#4729#4730#0" expanded="true" />
-                <element signature="e#4761#4762#0" expanded="true" />
-                <element signature="e#4799#4800#0" expanded="true" />
-                <element signature="e#4829#4830#0" expanded="true" />
-                <element signature="e#4870#4871#0" expanded="true" />
-                <element signature="e#4899#4900#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainFrom.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ha/github/chao/MainFrom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1303">
-              <caret line="307" column="38" lean-forward="true" selection-start-line="307" selection-start-column="38" selection-end-line="307" selection-end-column="38" />
-              <folding>
-                <element signature="docComment;class#MainFrom#0" />
-                <element signature="docComment;field#github#0;class#MainFrom#0" />
-                <element signature="docComment;field#rawUrl#0;class#MainFrom#0" />
-                <element signature="docComment;field#project#0;class#MainFrom#0" />
-                <element signature="docComment;field#downfilePath#0;class#MainFrom#0" />
-                <element signature="docComment;field#downTasks#0;class#MainFrom#0" />
-                <element signature="docComment;field#treeTasks#0;class#MainFrom#0" />
-                <element signature="docComment;field#singleton#0;class#MainFrom#0" />
-                <element signature="docComment;field#downloadThreads#0;class#MainFrom#0" />
-                <element signature="docComment;method#statrThread#0;class#MainFrom#0" />
-                <element signature="docComment;method#threadMonitoring#0;class#MainFrom#0" />
-                <element signature="e#5213#5214#0" expanded="true" />
-                <element signature="e#5241#5242#0" expanded="true" />
-                <element signature="method#actionPerformed#0;class#5201:8024" />
-                <element signature="e#8379#9772#0" expanded="true" />
-                <element signature="e#9771#9772#0" expanded="true" />
-                <element signature="e#9839#11636#0" expanded="true" />
-                <element signature="e#11635#11636#0" expanded="true" />
-                <element signature="e#11673#12036#0" expanded="true" />
-                <element signature="e#12035#12036#0" expanded="true" />
-                <element signature="method#getDownTasks#0;class#MainFrom#0" />
-                <element signature="method#getTreeTasks#0;class#MainFrom#0" />
-              </folding>
+            <state relative-caret-position="494">
+              <caret line="75" column="86" selection-start-line="75" selection-start-column="86" selection-end-line="75" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -109,11 +82,10 @@
       <file leaf-file-name="TreeThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="646">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
-                <element signature="e#1837#1838#0" expanded="true" />
-                <element signature="e#1866#1867#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,8 +94,8 @@
       <file leaf-file-name="DownloadThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/DownloadThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+            <state relative-caret-position="461">
+              <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1697#1698#0" expanded="true" />
@@ -136,34 +108,53 @@
       <file leaf-file-name="DownTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/DownTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+            <state relative-caret-position="855">
+              <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4185#4186#0" expanded="true" />
-                <element signature="e#4216#4217#0" expanded="true" />
-                <element signature="e#4264#4265#0" expanded="true" />
-                <element signature="e#4304#4305#0" expanded="true" />
-                <element signature="e#4334#4335#0" expanded="true" />
-                <element signature="e#4362#4363#0" expanded="true" />
-                <element signature="e#4401#4402#0" expanded="true" />
-                <element signature="e#4428#4429#0" expanded="true" />
-                <element signature="e#4472#4473#0" expanded="true" />
-                <element signature="e#4504#4505#0" expanded="true" />
-                <element signature="e#4542#4543#0" expanded="true" />
-                <element signature="e#4572#4573#0" expanded="true" />
-                <element signature="e#4613#4614#0" expanded="true" />
-                <element signature="e#4647#4648#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LOG.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ha/github/chao/LOG.java">
+      <file leaf-file-name="Page.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/Page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="361">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestAndResponseTool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/RequestAndResponseTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1539">
+              <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainFrom.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ha/github/chao/MainFrom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="721">
+              <caret line="150" column="32" lean-forward="true" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;field#github#0;class#MainFrom#0" />
+                <element signature="docComment;field#rawUrl#0;class#MainFrom#0" />
+                <element signature="docComment;field#project#0;class#MainFrom#0" />
+                <element signature="docComment;field#downfilePath#0;class#MainFrom#0" />
+                <element signature="docComment;field#downTasks#0;class#MainFrom#0" />
+                <element signature="docComment;field#treeTasks#0;class#MainFrom#0" />
+                <element signature="docComment;field#singleton#0;class#MainFrom#0" />
+                <element signature="docComment;field#downloadThreads#0;class#MainFrom#0" />
+                <element signature="docComment;method#statrThread#0;class#MainFrom#0" />
+                <element signature="docComment;method#threadMonitoring#0;class#MainFrom#0" />
+                <element signature="e#11595#11958#0" expanded="true" />
+                <element signature="e#11957#11958#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,6 +179,7 @@
       <find>fileName</find>
       <find>url</find>
       <find>statrThread</find>
+      <find>scrollPane1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,23 +215,25 @@
         <option value="$PROJECT_DIR$/src/ha/github/chao/GithubTree.java" />
         <option value="$PROJECT_DIR$/src/ha/github/chao/RequestAndResponseTool.java" />
         <option value="$PROJECT_DIR$/src/ha/github/chao/loding/AnimatedPanel.java" />
-        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/RequestAndResponseTool.java" />
         <option value="$PROJECT_DIR$/1.json" />
         <option value="$PROJECT_DIR$/src/ha/github/chao/Singleton.kt" />
-        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/Page.java" />
         <option value="$PROJECT_DIR$/src/ha/github/chao/MainFrom.form" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.kt" />
-        <option value="$PROJECT_DIR$/src/ha/github/chao/github/GithubTree.java" />
         <option value="$PROJECT_DIR$/src/ha/github/chao/test.java" />
-        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.java" />
-        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/DownloadThread.java" />
-        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeTask.java" />
-        <option value="$PROJECT_DIR$/src/ha/github/chao/MainFrom.java" />
+        <option value="D:/ProgramFiles/java/Java8/jdk1.8.0_25/b.txt" />
+        <option value="$PROJECT_DIR$/src/ha/github/chao/com/nj/zb/CleanUrl.java" />
         <option value="$PROJECT_DIR$/src/ha/github/chao/Singleton.java" />
+        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.java" />
+        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/TreeTask.java" />
+        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/DownloadThread.java" />
         <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/DownTask.java" />
+        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/Page.java" />
+        <option value="$PROJECT_DIR$/src/ha/github/chao/dowload/RequestAndResponseTool.java" />
+        <option value="$PROJECT_DIR$/src/ha/github/chao/github/GithubTree.java" />
         <option value="$PROJECT_DIR$/src/ha/github/chao/LOG.java" />
+        <option value="$PROJECT_DIR$/src/ha/github/chao/MainFrom.java" />
       </list>
     </option>
   </component>
@@ -248,6 +242,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
@@ -277,7 +277,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,21 +289,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="295" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="546" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/ProgramFiles/AndroidSdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/新建文件夹/intellij-plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/ProgramFiles/node-v8.9.1-win-x64/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.28523862" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -314,11 +314,11 @@
       <recent name="ha.github.chao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\windows\github-easy-Download\out\artifacts\github_down_jar" />
       <recent name="D:\workspace\IDEA\github-easy-Download\src\ha\github\chao" />
       <recent name="D:\workspace\IDEA\github-easy-Download" />
       <recent name="D:\workspace\IDEA\github-down\src\ha\github\chao" />
       <recent name="D:\workspace\IDEA\github-down\src\ha\github\chao\dowload" />
-      <recent name="D:\workspace\IDEA\github-down\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,6 +336,28 @@
   <component name="RunManager" selected="Application.MainFrom">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="CleanUrl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ha.github.chao.com.nj.zb.CleanUrl" />
+      <module name="github-down" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ha.github.chao.com.nj.zb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="LOG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ha.github.chao.LOG" />
+      <module name="github-down" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ha.github.chao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="MainFrom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ha.github.chao.MainFrom" />
@@ -495,10 +517,14 @@
     <list>
       <item itemvalue="Application.MainFrom" />
       <item itemvalue="Application.test" />
+      <item itemvalue="Application.LOG" />
+      <item itemvalue="Application.CleanUrl" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainFrom" />
+        <item itemvalue="Application.CleanUrl" />
+        <item itemvalue="Application.LOG" />
         <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
@@ -524,7 +550,11 @@
       <workItem from="1527761772537" duration="8337000" />
       <workItem from="1527772025932" duration="1313000" />
       <workItem from="1527773428357" duration="1070000" />
-      <workItem from="1527819950223" duration="29476000" />
+      <workItem from="1527819950223" duration="31326000" />
+      <workItem from="1527859195806" duration="1807000" />
+      <workItem from="1529287879117" duration="6059000" />
+      <workItem from="1531504914240" duration="1925000" />
+      <workItem from="1531710406831" duration="3212000" />
     </task>
     <task id="LOCAL-00001" summary="修改内容：&#10;1，添加线程启用和关闭&#10;2，添加线程监控&#10;3，修改逻辑调用错误导致下载工程不完整">
       <created>1527853946810</created>
@@ -537,17 +567,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166290000" />
+    <option name="totallyTimeSpent" value="181143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Apicloud" order="7" sideWeight="0.49946696" weight="0.32932165" />
+      <window_info anchor="bottom" id="Apicloud" order="7" sideWeight="0.49946696" weight="0.32751092" />
       <window_info anchor="right" id="RestServices" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.32932165" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
@@ -555,17 +584,17 @@
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.53719914" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.59080964" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32932165" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42560175" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="7" weight="0.32969433" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5229759" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -627,7 +656,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="183" />
+      <option name="time" value="184" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -678,106 +707,68 @@
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>documents.getAllElements()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>documents.getAllElements().select(&quot;img&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>documents.getAllElements().next(&quot;img&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>documents</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>documents.getAllElements().tagName(&quot;img&quot;).get(0).html()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>documents.getAllElements().tagName(&quot;img&quot;).get(0).text()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>documents.getAllElements().tagName(&quot;img&quot;).get(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>documents.getAllElements().tagName(&quot;img&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>documents.getElementsByTag(&quot;img&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/icon/fd2a069db6129124413d83fce249be42.jpeg" />
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/ImageIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="184" column="11" selection-start-line="184" selection-start-column="11" selection-end-line="184" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icon/Octocat.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/jre/lib/rt.jar!/sun/awt/windows/WWindowPeer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="221" column="40" lean-forward="true" selection-start-line="221" selection-start-column="40" selection-end-line="221" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/awt/peer/WindowPeer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/awt/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="707" column="23" selection-start-line="707" selection-start-column="23" selection-end-line="707" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/awt/Frame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="554" column="20" selection-start-line="554" selection-start-column="20" selection-end-line="554" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/JFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="657" column="19" lean-forward="true" selection-start-line="657" selection-start-column="19" selection-end-line="657" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/WinNTFileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/FileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="233" column="61" lean-forward="true" selection-start-line="233" selection-start-column="61" selection-end-line="233" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="239" column="7" lean-forward="true" selection-start-line="239" selection-start-column="7" selection-end-line="239" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/awt/Window.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/awt/Frame.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/JFrame.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/WinNTFileSystem.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/FileSystem.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/File.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/util/List.java" />
     <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/DownloadFile.java" />
     <entry file="file://$PROJECT_DIR$/src/ha/github/chao/HttpClientUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/HttpUtils.java" />
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/tree/DefaultMutableTreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="406" column="16" selection-start-line="406" selection-start-column="16" selection-end-line="406" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/JTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="715" selection-start-line="715" selection-end-line="715" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/tree/DefaultMutableTreeNode.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/JTree.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/Serializable.java" />
     <entry file="file://$PROJECT_DIR$/1.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -785,27 +776,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="271" column="6" selection-start-line="271" selection-start-column="6" selection-end-line="271" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="518" column="19" selection-start-line="518" selection-start-column="19" selection-end-line="518" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/loding/AnimatedPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2184">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/util/Map.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/util/ArrayList.java" />
     <entry file="jar://$PROJECT_DIR$/lib/jsoup-1.11.3.jar!/org/jsoup/parser/CharacterReader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -833,16 +805,6 @@
           <caret line="32" column="27" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="27" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/MainFrom.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/2018-05-31_205909.png" />
     <entry file="file://$PROJECT_DIR$/2018-05-31_210024.png">
@@ -878,74 +840,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
-          <folding>
-            <element signature="e#24380#24381#0" expanded="true" />
-            <element signature="e#24405#24406#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/tree/DefaultTreeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="82" column="12" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
-          <folding>
-            <element signature="e#2330#2331#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/RequestAndResponseTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="347" column="23" selection-start-line="347" selection-start-column="23" selection-end-line="347" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <element signature="e#382#1112#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1144#1642#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1451#1920#0" expanded="true" />
-            <element signature="e#1919#1920#0" expanded="true" />
-            <element signature="e#2311#2312#0" expanded="true" />
-            <element signature="e#2330#2331#0" expanded="true" />
-            <element signature="e#2365#2366#0" expanded="true" />
-            <element signature="e#2391#2392#0" expanded="true" />
-            <element signature="e#2429#2430#0" expanded="true" />
-            <element signature="e#2459#2460#0" expanded="true" />
-            <element signature="e#2640#2641#0" expanded="true" />
-            <element signature="e#2668#2669#0" expanded="true" />
-            <element signature="e#2707#2708#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="834" column="22" selection-start-line="834" selection-start-column="22" selection-end-line="834" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/io/PrintStream.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/javax/swing/tree/DefaultTreeModel.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/jre/lib/rt.jar!/sun/misc/Unsafe.class" />
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/test.java" />
+    <entry file="jar://D:/ProgramFiles/java/jdk1.8.0_25/src.zip!/java/lang/Thread.java" />
     <entry file="file://$PROJECT_DIR$/src/ha/github/chao/loding/InfiniteProgressPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -953,17 +852,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/github/GithubTree.java">
+    <entry file="file://$PROJECT_DIR$/Singleton.log" />
+    <entry file="file://D:/ProgramFiles/java/Java8/jdk1.8.0_25/b.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="495">
+          <caret line="1252" column="117" lean-forward="true" selection-start-line="1252" selection-start-column="117" selection-end-line="1252" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files.txt" />
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/MainFrom.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/com/nj/zb/CleanUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/Singleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ProgramFiles/java/Java8/jdk1.8.0_25/src.zip!/java/awt/Dimension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/TreeTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="75" column="86" selection-start-line="75" selection-start-column="86" selection-end-line="75" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/DownloadThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+        <state relative-caret-position="461">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1697#1698#0" expanded="true" />
@@ -972,12 +917,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/DownTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/RequestAndResponseTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/ProgramFiles/java/Java8/jdk1.8.0_25/src.zip!/javax/swing/WindowConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/loding/AnimatedPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/LOG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/github/GithubTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ha/github/chao/MainFrom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1303">
-          <caret line="307" column="38" lean-forward="true" selection-start-line="307" selection-start-column="38" selection-end-line="307" selection-end-column="38" />
+        <state relative-caret-position="721">
+          <caret line="150" column="32" lean-forward="true" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
           <folding>
-            <element signature="docComment;class#MainFrom#0" />
+            <element signature="imports" expanded="true" />
             <element signature="docComment;field#github#0;class#MainFrom#0" />
             <element signature="docComment;field#rawUrl#0;class#MainFrom#0" />
             <element signature="docComment;field#project#0;class#MainFrom#0" />
@@ -988,103 +993,9 @@
             <element signature="docComment;field#downloadThreads#0;class#MainFrom#0" />
             <element signature="docComment;method#statrThread#0;class#MainFrom#0" />
             <element signature="docComment;method#threadMonitoring#0;class#MainFrom#0" />
-            <element signature="e#5213#5214#0" expanded="true" />
-            <element signature="e#5241#5242#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#5201:8024" />
-            <element signature="e#8379#9772#0" expanded="true" />
-            <element signature="e#9771#9772#0" expanded="true" />
-            <element signature="e#9839#11636#0" expanded="true" />
-            <element signature="e#11635#11636#0" expanded="true" />
-            <element signature="e#11673#12036#0" expanded="true" />
-            <element signature="e#12035#12036#0" expanded="true" />
-            <element signature="method#getDownTasks#0;class#MainFrom#0" />
-            <element signature="method#getTreeTasks#0;class#MainFrom#0" />
+            <element signature="e#11595#11958#0" expanded="true" />
+            <element signature="e#11957#11958#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/TreeTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#4334#4335#0" expanded="true" />
-            <element signature="e#4362#4363#0" expanded="true" />
-            <element signature="e#4401#4402#0" expanded="true" />
-            <element signature="e#4428#4429#0" expanded="true" />
-            <element signature="e#4522#4523#0" expanded="true" />
-            <element signature="e#4552#4553#0" expanded="true" />
-            <element signature="e#4587#4588#0" expanded="true" />
-            <element signature="e#4614#4615#0" expanded="true" />
-            <element signature="e#4658#4659#0" expanded="true" />
-            <element signature="e#4690#4691#0" expanded="true" />
-            <element signature="e#4729#4730#0" expanded="true" />
-            <element signature="e#4761#4762#0" expanded="true" />
-            <element signature="e#4799#4800#0" expanded="true" />
-            <element signature="e#4829#4830#0" expanded="true" />
-            <element signature="e#4870#4871#0" expanded="true" />
-            <element signature="e#4899#4900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/TreeThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/dowload/DownTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4185#4186#0" expanded="true" />
-            <element signature="e#4216#4217#0" expanded="true" />
-            <element signature="e#4264#4265#0" expanded="true" />
-            <element signature="e#4304#4305#0" expanded="true" />
-            <element signature="e#4334#4335#0" expanded="true" />
-            <element signature="e#4362#4363#0" expanded="true" />
-            <element signature="e#4401#4402#0" expanded="true" />
-            <element signature="e#4428#4429#0" expanded="true" />
-            <element signature="e#4472#4473#0" expanded="true" />
-            <element signature="e#4504#4505#0" expanded="true" />
-            <element signature="e#4542#4543#0" expanded="true" />
-            <element signature="e#4572#4573#0" expanded="true" />
-            <element signature="e#4613#4614#0" expanded="true" />
-            <element signature="e#4647#4648#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Singleton.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ha/github/chao/LOG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1095,10 +1006,10 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="javaee-facet-resources" />
+              <type id="artifact" />
               <type id="jpa-descriptors" />
               <type id="library" />
-              <type id="artifact" />
+              <type id="javaee-facet-resources" />
             </show-content>
           </artifact-editor>
           <last-edited>github-down:jar</last-edited>
@@ -1118,7 +1029,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.28523862" />
               </list>
             </option>
           </splitter-proportions>
@@ -1138,7 +1049,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1154,8 +1065,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
-                <option value="0.6" />
+                <option value="0.28523862" />
               </list>
             </option>
           </splitter-proportions>

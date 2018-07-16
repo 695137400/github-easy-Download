@@ -9,7 +9,7 @@ import ha.github.chao.dowload.TreeTask;
  * Date: 2018-5-31-0031<br/>
  * Time: 11:26:09<br/>
  * Author:lizhichao<br/>
- * Description: <span style="color:#63D3E9"></span><br/>
+ * Description: <span style="color:#63D3E9">任务处理</span><br/>
  */
 public class Singleton {
     private Singleton() {
@@ -23,13 +23,21 @@ public class Singleton {
         return single;
     }
 
-    public static DownTask getDownTasks() {
+    /**
+     * 获取下载任务
+     *
+     * @return
+     */
+    public DownTask getDownTasks() {
         DownTask task = null;
         synchronized (lock) {
             try {
-                task = MainFrom.getDownTasks();
-                if (null != task) {
-                    task.setRun(true);
+                for (DownTask d : MainFrom.downTasks) {
+                    if (!d.isRun()) {
+                        task = d;
+                        task.setRun(true);
+                        break;
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -38,14 +46,21 @@ public class Singleton {
         return task;
     }
 
-
-    public static TreeTask getTreeTasks() {
+    /**
+     * 获取列表任务
+     *
+     * @return
+     */
+    public TreeTask getTreeTasks() {
         TreeTask task = null;
         synchronized (lock) {
             try {
-                task = MainFrom.getTreeTasks();
-                if (null != task) {
-                    task.setRun(true);
+                for (TreeTask d : MainFrom.treeTasks) {
+                    if (!d.isRun()) {
+                        task = d;
+                        task.setRun(true);
+                        break;
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -54,7 +69,12 @@ public class Singleton {
         return task;
     }
 
-    public static void setTreeTask(TreeTask task) {
+    /**
+     * 设置列表任务
+     *
+     * @param task
+     */
+    public void setTreeTask(TreeTask task) {
         try {
             synchronized (lock) {
                 LOG.debug("setTreeTask:\t" + task.getRoot().getTitle(), "Singleton.log");
@@ -65,7 +85,12 @@ public class Singleton {
         }
     }
 
-    public static void setDownTask(DownTask task) {
+    /**
+     * 设置下载任务
+     *
+     * @param task
+     */
+    public void setDownTask(DownTask task) {
         try {
             synchronized (lock) {
                 LOG.debug("setDownTask:\t" + task.getFileName(), "Singleton.log");

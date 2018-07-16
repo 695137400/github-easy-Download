@@ -20,7 +20,7 @@ public class Page {
     private String contentType;// 内容类型
 
 
-    public Page(byte[] content, String url, String contentType) {
+    Page(byte[] content, String url, String contentType) {
         this.content = content;
         this.url = url;
         this.contentType = contentType;

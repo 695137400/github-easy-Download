@@ -27,7 +27,7 @@ public class TreeTask {
     /**
      * 是否加载子目录
      */
-    boolean chiden = false;
+    private boolean chiden = false;
 
     /**
      * 是否已经运行
@@ -73,13 +73,14 @@ public class TreeTask {
     }
 
 
-    public synchronized void getDefaultTreeModel(Map<String, Object> falg) throws Exception {
+    synchronized void getDefaultTreeModel(Map<String, Object> falg) throws Exception {
         LOG.debug("TreeTask:\t" + JSON.toJSON(falg), "TreeTask.log");
         log.setText("加载地址：" + url);
         Page page = RequestAndResponseTool.sendRequstAndGetResponse(url);
         Document documents = page.getDoc();
         Elements elements = documents.getElementsByClass("files");
         if (elements.size() > 0) {
+            //解析页面
             for (Element element : elements) {
                 Elements els = element.getElementsByClass("js-navigation-item");
                 if (els.size() > 0) {
@@ -100,6 +101,7 @@ public class TreeTask {
                         node.setUrl(urlA);
                         node.setType(type);
                         node.setFilePath(root.getFilePath() + "/" + path);
+                        //文件夹，加入任务列表，下次执行
                         if ("directory".equals(type)) {
                             node.add(new GithubTree("...").setType("temp"));
                             root.add(node);
@@ -124,6 +126,7 @@ public class TreeTask {
         tree.updateUI();
         boolean res = MainFrom.treeTasks.remove(this);
         LOG.debug("TreeTask删除任务\t" + root.getTitle() + ":\t" + res, "TreeTask.log");
+        //是文件，添加文件下载任务
         if (isDown) {
             DownTask downTask = new DownTask();
             downTask.setRun(false);

@@ -17,7 +17,7 @@ import java.util.Map;
  */
 public class DownloadThread extends Thread {
 
-    final static Singleton singleton = Singleton.getInstance();
+    private final static Singleton singleton = Singleton.getInstance();
 
     //当前ID号
     private int ID;
@@ -26,7 +26,7 @@ public class DownloadThread extends Thread {
         ID = id;
     }
 
-    public boolean exit = true;
+    private boolean exit = true;
 
     @Override
     public void run() {

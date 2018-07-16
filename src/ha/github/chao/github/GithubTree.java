@@ -28,9 +28,8 @@ public class GithubTree extends DefaultMutableTreeNode {
         return childrens;
     }
 
-    public GithubTree setChildrens(List<GithubTree> childrens) {
+    public void setChildrens(List<GithubTree> childrens) {
         this.childrens = childrens;
-        return this;
     }
 
     public String getTitle() {
@@ -50,17 +49,15 @@ public class GithubTree extends DefaultMutableTreeNode {
         return url;
     }
 
-    public GithubTree setUrl(String url) {
+    public void setUrl(String url) {
         this.url = url;
-        return this;
     }
 
     public String getFilePath() {
         return filePath;
     }
 
-    public GithubTree setFilePath(String filePath) {
+    public void setFilePath(String filePath) {
         this.filePath = filePath;
-        return this;
     }
 }

@@ -43,9 +43,9 @@ public class DownTask {
     /**
      * 单例创建任务
      */
-    static Singleton singleton = Singleton.getInstance();
+    private static Singleton singleton = Singleton.getInstance();
 
-    public synchronized void downFile(Map<String, Object> falg) throws Exception {
+    synchronized void downFile(Map<String, Object> falg) throws Exception {
         LOG.debug("DownTask:\t" + JSON.toJSON(falg), "DownTask.log");
         String type = tree.getType();
         if ("directory".equals(type)) {

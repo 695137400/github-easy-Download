@@ -17,12 +17,12 @@ import java.util.Map;
  * Description: <span style="color:#63D3E9"></span><br/>
  */
 public class TreeThread extends Thread {
-    final static Singleton singleton = Singleton.getInstance();
+    private final static Singleton singleton = Singleton.getInstance();
 
     //当前ID号
     public int ID;
 
-    public boolean exit = true;
+    private boolean exit = true;
 
     public TreeThread(int id) {
         ID = id;

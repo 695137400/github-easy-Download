@@ -36,8 +36,8 @@ public class MainFrom {
     private JScrollPane scrollPane1;
     private JButton down;
     private JLabel log;
-    static InfiniteProgressPanel glasspane = new InfiniteProgressPanel();
-    static Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+    private static InfiniteProgressPanel glasspane = new InfiniteProgressPanel();
+    private static Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
     private static JFrame frame;
 
 
@@ -69,12 +69,12 @@ public class MainFrom {
     /**
      * 单例创建任务
      */
-    static Singleton singleton = Singleton.getInstance();
+    private static Singleton singleton = Singleton.getInstance();
     /**
      * 线程列表
      */
-    public static List<DownloadThread> downloadThreads = new ArrayList<>();
-    public static List<TreeThread> treeThreads = new ArrayList<>();
+    private static List<DownloadThread> downloadThreads = new ArrayList<>();
+    private static List<TreeThread> treeThreads = new ArrayList<>();
 
     public static void main(String[] args) {
         frame = new JFrame("github 任意下载");
@@ -82,7 +82,7 @@ public class MainFrom {
         frame.setIconImage(new ImageIcon("icon/Octocat.png").getImage());
         frame.setBounds(550, 300, 800, 500);
         frame.setContentPane(new MainFrom().panel1);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
         glasspane.setBounds(100, 100, (dimension.width) / 2, (dimension.height) / 2);
         frame.setGlassPane(glasspane);
@@ -166,10 +166,10 @@ public class MainFrom {
                     while (exit) {
                         frame.setTitle("github 任意下载    剩余任务数    下载：" + downTasks.size() + "    列表：" + treeTasks.size());
                         if (downTasks.size() == 0 && treeTasks.size() == 0) {
-                            glasspane.stop();//结束动画
                             frame.setTitle("github 任意下载");
                             log.setText("加载完毕！");
                             stopThread(0);
+                            glasspane.stop();//结束动画
                             this.close();
                             break;
                         }
@@ -187,7 +187,7 @@ public class MainFrom {
         }.start();
     }
 
-    public MainFrom() {
+    private MainFrom() {
         tree1.setVisible(false);
         button1.setEnabled(false);//变灰
         down.setEnabled(false);//变灰
@@ -315,7 +315,7 @@ public class MainFrom {
             @Override
             public void keyReleased(KeyEvent e) {
                 String url = textField1.getText();
-                if (url.toLowerCase().indexOf("http") >= 0) {
+                if (url.toLowerCase().contains("http")) {
                     button1.setEnabled(true);
                 } else {
                     button1.setEnabled(false);
@@ -337,7 +337,7 @@ public class MainFrom {
             for (Element element : elements) {
                 Elements childrens = element.getElementsByClass("js-navigation-item");
                 if (childrens.size() > 0) {
-                    List<GithubTree> childerns = new ArrayList<>();
+                    List<GithubTree> childes = new ArrayList<>();
                     for (Element el : childrens) {
                         Elements tagA = el.getElementsByClass("js-navigation-open");
                         if (null == tagA.attr("id") || "".equals(tagA.attr("id"))) {
@@ -361,34 +361,15 @@ public class MainFrom {
                             singleton.setTreeTask(treeTask);
                         }
                         root.add(childern);
-                        childerns.add(childern);
+                        childes.add(childern);
                     }
-                    root.setChildrens(childerns);
+                    root.setChildrens(childes);
                 }
             }
         } else {
             root.setType("file");
         }
         tree1.updateUI();
-    }
-
-    public synchronized static DownTask getDownTasks() {
-        for (DownTask d : downTasks) {
-            if (!d.isRun()) {
-                return d;
-            }
-        }
-        return null;
-    }
-
-
-    public synchronized static TreeTask getTreeTasks() {
-        for (TreeTask t : treeTasks) {
-            if (!t.isRun()) {
-                return t;
-            }
-        }
-        return null;
     }
 
 }

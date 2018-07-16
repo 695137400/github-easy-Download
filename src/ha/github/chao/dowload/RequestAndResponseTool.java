@@ -39,10 +39,7 @@ public class RequestAndResponseTool {
             byte[] responseBody = getMethod.getResponseBody();// 读取为字节 数组
             String contentType = getMethod.getResponseHeader("Content-Type").getValue(); // 得到当前返回类型
             page = new Page(responseBody, url, contentType); //封装成为页面
-        } catch (HttpException e) {
-            throw e;
-        } catch (IOException e) {
-            // 发生网络异常
+        } catch (Exception e) {
             throw e;
         } finally {
             // 释放连接
@@ -58,7 +55,7 @@ public class RequestAndResponseTool {
      * @param savePath
      * @throws IOException
      */
-    public static void  downLoadFromUrl(String urlStr,String fileName,String savePath) throws IOException{
+    static void  downLoadFromUrl(String urlStr, String fileName, String savePath) throws IOException{
         URL url = new URL(urlStr);
         HttpURLConnection conn = (HttpURLConnection)url.openConnection();
         //设置超时间为3秒
@@ -79,12 +76,8 @@ public class RequestAndResponseTool {
         File file = new File(saveDir+File.separator+fileName);
         FileOutputStream fos = new FileOutputStream(file);
         fos.write(getData);
-        if(fos!=null){
-            fos.close();
-        }
-        if(inputStream!=null){
-            inputStream.close();
-        }
+        fos.close();
+        inputStream.close();
     }
 
 
@@ -95,7 +88,7 @@ public class RequestAndResponseTool {
      * @return
      * @throws IOException
      */
-    public static  byte[] readInputStream(InputStream inputStream) throws IOException {
+    private static  byte[] readInputStream(InputStream inputStream) throws IOException {
         byte[] buffer = new byte[1024];
         int len = 0;
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
