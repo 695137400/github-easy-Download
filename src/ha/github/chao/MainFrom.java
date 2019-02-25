@@ -4,6 +4,7 @@ package ha.github.chao;
 import ha.github.chao.dowload.*;
 import ha.github.chao.github.GithubTree;
 import ha.github.chao.loding.InfiniteProgressPanel;
+import org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -77,6 +78,12 @@ public class MainFrom {
     private static List<TreeThread> treeThreads = new ArrayList<>();
 
     public static void main(String[] args) {
+        try {
+            BeautyEyeLNFHelper.launchBeautyEyeLNF();
+            UIManager.put("RootPane.setupButtonVisible", false);
+        } catch (Exception e) {
+            //TODO exception
+        }
         frame = new JFrame("github 任意下载");
         //frame.setResizable(false);
         frame.setIconImage(new ImageIcon("icon/Octocat.png").getImage());

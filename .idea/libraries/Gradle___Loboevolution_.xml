@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: :Loboevolution:">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../IDEA/markdown/lib/Loboevolution.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

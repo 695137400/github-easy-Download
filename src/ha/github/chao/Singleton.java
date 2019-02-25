@@ -30,7 +30,7 @@ public class Singleton {
      */
     public DownTask getDownTasks() {
         DownTask task = null;
-        synchronized (lock) {
+        synchronized (single) {
             try {
                 for (DownTask d : MainFrom.downTasks) {
                     if (!d.isRun()) {
@@ -53,7 +53,7 @@ public class Singleton {
      */
     public TreeTask getTreeTasks() {
         TreeTask task = null;
-        synchronized (lock) {
+        synchronized (single) {
             try {
                 for (TreeTask d : MainFrom.treeTasks) {
                     if (!d.isRun()) {
@@ -76,7 +76,7 @@ public class Singleton {
      */
     public void setTreeTask(TreeTask task) {
         try {
-            synchronized (lock) {
+            synchronized (single) {
                 LOG.debug("setTreeTask:\t" + task.getRoot().getTitle(), "Singleton.log");
                 MainFrom.treeTasks.add(task);
             }
@@ -92,7 +92,7 @@ public class Singleton {
      */
     public void setDownTask(DownTask task) {
         try {
-            synchronized (lock) {
+            synchronized (single) {
                 LOG.debug("setDownTask:\t" + task.getFileName(), "Singleton.log");
                 MainFrom.downTasks.add(task);
             }
